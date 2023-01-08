@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+<link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/180da9c61e.js" crossorigin="anonymous"></script>
+</head>
+<body onload="document.form1.text1.focus()">
+<div class="container">
+ <img src="./images/logo.svg" alt="logo" class="logo"> 
+  <h1 class="main-heading">We are launching <span>soon!</span></h1>
+  <p class="sub-info">Subscribe and get notified</p>
+ <form action="#" name="form1">
+  <ul class="flex inputs">
+    <li><input type="text" name="text1" class="input" placeholder="Your email address"></li>
+    <button class="submit" onclick="validateEmail(document.form1.text1)"> Notify Me</button>
+     </ul>
+    
+ </form>
+ <p class="error-message">Please provide a valid email address</p>
+ <p class="empty-message">"Whoops! It looks like you forgot to add your email"</p>
+ <p class="valid-message">"We have sent you an email "</p>
+  <img src="./images/illustration-dashboard.png" alt="dashboard" class="dashboard">
+ <ul class="icons flex">
+  <li><i class="fa-brands fa-facebook-f"></i></li>
+  <li><i class="fa-brands fa-twitter"></i></li>
+  <li><i class="fa-brands fa-instagram"></i></li>
+ </ul>
+<p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

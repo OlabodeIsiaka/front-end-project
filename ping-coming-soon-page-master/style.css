@@ -1,0 +1,263 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    /* ## Colors */
+--Blue: hsl(223, 87%, 63%);
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+body{
+    font-size: 20px;
+   font-family: 'Libre Franklin', sans-serif;
+}
+.container{
+margin: 0 auto;
+width: 70%;
+max-width: 400px;
+display: flex;
+flex-direction:column;
+align-items: center;
+}
+.logo{
+margin: 4em 0  1em 0 ;
+width: 13%;
+}
+.main-heading{
+margin: 1em auto;
+font-size: 1.5rem;
+color: var(--Gray);
+font-weight: 300;
+opacity: 0.8;
+}
+
+span{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+ .sub-info{
+color: var(--Gray);
+font-size: 0.75rem;
+font-weight: 300;
+margin-bottom: 2.7em;
+/* opacity: 0.9; */
+ } 
+ form{
+    width: 80%;
+    position: relative;
+    }
+input{
+ padding: 0.8rem 7.5em 0.8rem 2.5em;
+ border-radius: 2rem;
+ border: 1px solid var(--Pale-Blue);
+}
+input:focus{
+    outline: none;
+}
+ .submit{
+background: var(--Blue);
+padding: 1.2em;
+font-size: 0.6em;
+color: var(--Pale-Blue);
+font-weight: 600;
+text-align: center;
+border-radius: 2rem;
+width: 100%;
+border: none;
+margin-bottom: 3em;
+box-shadow: 0  5px 10px  var(--Pale-Blue);
+ }
+
+ ::placeholder{
+color: var(--Pale-Blue);
+font-size: 0.73rem;
+
+font-weight: 200;
+opacity:0.7;
+}
+ :-ms-input-placeholder{
+color: var(--Pale-Blue);
+font-size: 0.73rem;
+
+font-weight: 200;
+opacity:0.7;
+}
+ ::-ms-input-placeholder{
+color: var(--Pale-Blue);
+font-size: 0.73rem;
+font-weight: 200;
+opacity:0.7;
+}
+ .flex{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 0.6rem;
+ }
+.error-message{
+    color: var(--Light-Red);
+    font-size: 0.7rem;
+    position: absolute;
+    top: 17.5rem;
+    display: none;
+}
+.empty-message{
+    color: var(--Light-Red);
+    font-size: 0.7rem;
+    position: absolute;
+        top: 17.5rem;
+    display: none;
+}
+.valid-message{
+    color: var(--Blue);
+    font-size: 0.7rem;
+    position: absolute;
+        top: 17.5rem;
+    display: none;
+}
+
+ .dashboard{
+    width: 100%;
+    margin: 1em 0 7em 0;
+ }
+.icons{
+    flex-direction: row;
+  margin-bottom: 2em;
+
+}
+.icons>li{
+ color: var(--Blue);
+ font-size: 0.8rem;
+ border: 1px solid var(--Pale-Blue);
+ border-radius: 50%;
+ padding: 0.5em 0.6em;
+ opacity: 0.8;
+}
+
+.copyright{
+    font-size: 0.65rem;
+    margin-bottom: 1em;
+    color: var(--Gray);
+    opacity: 0.4;
+    font-weight: 600
+}
+@media (min-width :1440px) {
+    .container{
+        width: 80%;
+        max-width: 80%;
+    }
+    .logo{
+        width:7%;
+        margin: 3em auto;
+    }
+    .main-heading{
+        font-size: 3rem;
+    }
+    .sub-info{
+        font-size: 1.3rem;
+    }
+       .flex{
+        display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+         
+            gap: 4rem;
+                   }
+        .input{
+            width: 80%;
+            padding: 1.1em 10em 1.1em 3em ;
+        }
+        .submit{
+            padding: 1.5em;
+            margin-left: 5em;
+            width: 20%;
+        }
+.dashboard{
+    width: 55%;
+}
+.copyright{
+    font-size: 0.8rem;
+}
+.submit:hover{
+    background: var(--Blue);
+    color: white;
+    cursor: pointer;
+}
+
+        }      
+.error-message{
+    color: var(--Light-Red);
+    font-size: 0.7rem;
+    position: absolute;
+     top: 26.2rem;
+       left: 30rem;
+    display: none;
+}
+.empty-message{
+    color: var(--Light-Red);
+    font-size: 0.7rem;
+    position: absolute;
+        top: 26.2rem;
+       left: 30rem;
+    display: none;
+}
+.valid-message{
+    color: var(--Blue);
+    font-size: 0.7rem;
+    position: absolute;
+        top: 26.2rem;
+       left: 30rem;
+    display: none;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+    .attribution a {
+         color: hsl(228, 45%, 44%); 
+    }
+ 

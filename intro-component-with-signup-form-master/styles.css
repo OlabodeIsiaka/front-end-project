@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+/* ### Primary */
+
+--Red: hsl(0, 100%, 74%); 
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+body {
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color:var(--Red) ;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 375px;
+}
+article{
+           margin: 0 auto;
+ 
+    } 
+    form{
+       display: flex;
+       flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin-top: 1em;
+        padding: 1em;
+        gap: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+    } 
+   
+    input{
+        display: block;
+        width: 100%;
+        padding: 1em 11em 1em 1em;
+        border-radius: 0.2rem;
+        border: 1px solid var(--Grayish-Blue);
+    }
+    
+    .article-1 h1{
+        font-size: 1.7rem;
+        color: white;
+        font-weight: 700;
+        margin-top: 2.5em;
+        line-height: 1.2;
+    }
+    .article-1 p{
+        color: white;
+        line-height:1.5;
+        margin-top: 1rem;
+        font-size: 1.05rem;
+     
+    }
+    .trial{
+        font-size: 1rem;
+        background-color: var(--Blue);
+        color:white ;
+        padding: 1em 5em;
+         margin-top: 3em;
+        border-radius: 0.5rem;
+        line-height: 1.5;
+    }
+    p .bill{
+        color: var(--Grayish-Blue);
+    }
+    .submitBtn{
+         display: block;
+        width: 100%;
+        padding: 1em 5em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        background-color: var(--Green);
+        border: none;
+        color: white;
+        border-radius: 0.2rem;
+        word-spacing: 0.2rem;
+           }
+           .submitBtn:hover{
+            cursor: pointer;
+           }
+  .condition{
+    font-size: 0.65rem;
+    margin: 0 4em 0.2em 4em ;
+    line-height: 1.8;
+    color: var(--Grayish-Blue);
+  
+
+  }
+ 
+   .form-field.error input {
+    border-color: 1px solid var(--Red);
+    outline: 1px solid var(--Red);
+}
+small{
+    color: var(--Red);
+    font-size: 0.7rem;
+    margin-left: 0;
+}
+.form-field.success input {
+    border-color: var(--Green);
+    outline: var(--Green);
+}
+
+
+.form-field small {
+    color: var(--Red);
+}
+
+  p .terms{
+    color: var(--Red);
+    font-weight: 600;
+  }
+  @media(min-width:1440px){
+    .container{
+        display: flex;
+        max-width: 70%;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        height: 100vh;
+    }
+    form{
+        gap: 1.5rem;
+        padding: 2em;
+        /* width: 80%; */
+    }
+    .article-2{
+        width: 60%;
+    }
+    input{
+ padding: 1em 17.5em 1em 1em;
+    }
+    .submitBtn{
+  padding: 1em 9.8em;
+    }
+    .article-1{
+        text-align: justify;
+        width: 60%;
+    }
+    .article-1 h1{
+        font-size: 2.5rem;
+        margin-top: 0;
+        line-height: 1;
+    }
+    .article-1 p{
+        font-size:0.95rem;
+        margin-top: 1.5em;
+        word-spacing: unset;
+    }
+  }
+    .attribution { 
+        font-size: 13px; text-align: center;
+     }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
